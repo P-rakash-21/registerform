@@ -18,6 +18,7 @@ const RegistrationForm = () => {
         try {
             const response = await axios.post('https://form-o6dr.onrender.com/api/register', formData);
             console.log(response.data);
+            alert("registration successful");
         } catch (error) {
             console.error(error);
         }
