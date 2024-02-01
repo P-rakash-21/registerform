@@ -1,6 +1,7 @@
 // RegistrationForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import './styles.css';
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const RegistrationForm = () => {
     };
 
     return (
-        <div>
+        <div className="registration-form"> {/* Add class name */}
             <h2>Register</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="username" placeholder="Username" onChange={handleChange} />
